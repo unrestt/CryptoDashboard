@@ -1,6 +1,6 @@
-# CryptoDashboard 🚀
+# Crypto Dashboard 🚀
 
-![CryptoDashboard Banner](<!-- TODO: Dodaj tutaj link do screenshota/bannera -->)
+![CryptoDashboard Banner](docs/dashboard.png)
 
 Profesjonalny, responsywny dashboard do śledzenia cen i wykresów kryptowalut w czasie rzeczywistym. Projekt zbudowany w oparciu o nowoczesny stos technologiczny z wykorzystaniem React, TypeScript, Vite oraz Tailwind CSS.
 
