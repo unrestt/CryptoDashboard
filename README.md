@@ -13,9 +13,7 @@ Profesjonalny, responsywny dashboard do śledzenia cen i wykresów kryptowalut w
 
 | Widok główny (Desktop)
 
-| ![CryptoDashboard Banner](docs/dashboard.png) |
-
-> *Wskazówka: Zrób zrzuty ekranu swojej aplikacji i umieść je w folderze np. `docs/` lub bezpośrednio przeciągnij do edytora na GitHubie, a następnie zamień powyższe komentarze na linki do obrazów.*
+![CryptoDashboard Banner](docs/dashboard.png) 
 
 ## 🛠️ Technologie i narzędzia (Tech Stack)
 
