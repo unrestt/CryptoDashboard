@@ -10,8 +10,8 @@ const MainLayout = () => {
   const { data: ohlcData, isLoading: isChartLoading } = useOHLC(selectedCoinId);
 
   return (
-    <div className="min-h-screen bg-[#0d131f] text-white p-4 md:p-6 lg:p-8 font-sans">
-      <div className="max-w-[1600px] mx-auto">
+    <div className="min-h-screen bg-[#0d131f] text-white p-2 md:p-4 lg:p-6 font-sans">
+      <div className="w-full mx-auto">
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
           <div className="xl:col-span-7">
             <CoinListTable

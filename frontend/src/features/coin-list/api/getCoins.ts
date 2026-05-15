@@ -4,7 +4,7 @@ import type { Coin } from "../types/Coin";
 export const getCoins = async (): Promise<Coin[]> => {
     const { data } = await api.get<Coin[]>('/coins/markets', {
         params: {
-            vs_currency: 'usd', // lub 'pln'
+            vs_currency: 'usd',
             order: 'market_cap_desc',
             per_page: 100,
             page: 1,

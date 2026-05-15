@@ -16,16 +16,17 @@ const CandleChart = ({ data, isLoading }: Props) => {
   useEffect(() => {
     if (!chartContainerRef.current) return;
 
-    const handleResize = () => {
-      if (chartRef.current && chartContainerRef.current) {
-        chartRef.current.applyOptions({
-          width: chartContainerRef.current.clientWidth,
-          height: chartContainerRef.current.clientHeight,
-        });
-      }
-    };
+    //todo
+    // const handleResize = () => {
+    //   if (chartRef.current && chartContainerRef.current) {
+    //     chartRef.current.applyOptions({
+    //       width: chartContainerRef.current.clientWidth,
+    //       height: chartContainerRef.current.clientHeight,
+    //     });
+    //   }
+    // };
 
-    // Initialize chart
+
     const chart = createChart(chartContainerRef.current, {
       layout: {
         background: { type: ColorType.Solid, color: "#141d2b" },
@@ -74,8 +75,7 @@ const CandleChart = ({ data, isLoading }: Props) => {
   useEffect(() => {
     if (!seriesRef.current || !data) return;
 
-    // Transform CoinGecko data: [timestamp, open, high, low, close]
-    // CoinGecko timestamp is in milliseconds, LightweightCharts needs seconds if Time is a number
+
     const formattedData = data.map((item) => ({
       time: (item[0] / 1000) as Time,
       open: item[1],
@@ -84,7 +84,7 @@ const CandleChart = ({ data, isLoading }: Props) => {
       close: item[4],
     }));
 
-    // Ensure data is sorted by time ascending
+
     formattedData.sort((a, b) => (a.time as number) - (b.time as number));
 
     seriesRef.current.setData(formattedData);
